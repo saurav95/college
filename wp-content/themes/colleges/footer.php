@@ -1,4 +1,4 @@
-			<!--</div>--> <!-- end #container -->
+			</div> <!-- end #container -->
             <footer role="contentinfo">
 			
 				<div id="inner-footer" class="clearfix">

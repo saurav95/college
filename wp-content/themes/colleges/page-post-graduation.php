@@ -350,6 +350,5 @@ Template Name: Post Graduation
 				<?php //get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
-        </div>
-<div class="container-fluid no-padding">
+
 <?php get_footer(); ?>
