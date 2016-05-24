@@ -211,6 +211,51 @@ a:focus {outline: none;}
 #menu-footer-menu li a:hover {
   color: #FF6B49;
 }
+/***************filter part css Start*************/
+
+#fees > input {
+  margin: 8px 0;
+}
+#states > input {
+  margin: 8px 0;
+}
+.filter_form {}
+
+.filter_form .panel-default {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.filter_form .panel-collapse {
+  margin: 0 0 30px;
+}
+
+.filter_form .panel-group {
+  margin-bottom: 10px;
+}
+.filter_form .panel-heading {
+  background-color: transparent;
+  border-bottom: 1px solid rgb(51, 51, 51);
+  border-radius: 0;
+  border-top: 1px solid rgb(51, 51, 51);
+  margin: 0;
+  padding: 10px;
+}
+.filter_form .filter-favicon {
+  float: left;
+  margin: -5px 0 0;
+  padding: 0 10px 0 0;
+}
+.filter_form .filter-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.filter_form .filter-title i {
+    color: #333;
+}
+
+/***************filter part css end*************/
 
 /**************College listing*************/
 .college_listings {
@@ -244,11 +289,12 @@ a:focus {outline: none;}
 }
 .college_tittle {
   float: left;
-  width: 88%;
+  width: 65%;
 }
 .college_tittle h1 {
   float: left;
   margin: 4px 0 0;
+  word-wrap: break-word;
 }
 .college_name > a {
     color: #333;
@@ -334,6 +380,293 @@ a:focus {outline: none;}
   margin: 0 4px 0 0;
 }
 
-.container-fluid.no-padding{
-	display:none !important;
+/***********start single page.php css**********/
+.col-title-sec {
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.coll-gallery {
+  float: left;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.coll-gallery ul {
+    margin: 0;
+    padding: 0;
+}
+.coll-gallery ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.coll-gallery ul li img {
+  border-radius: 6px;
+  float: left;
+  margin: 0 8px 0 0;
+  max-height: 60px !important;
+  width: 60px;
+}
+
+.internal_navigation {
+    background-color: #333333;
+}
+.internal_navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.internal_navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.internal_navigation ul li a {
+    display: table-cell;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #fff;
+  padding: 13px 35px;
+  border-top: 3px solid transparent;
+}
+.internal_navigation ul li a:hover {
+    background-color: #EEEEEE;
+  border-radius: 3px 3px 0 0;
+  border-top: 3px solid #917191;
+  color: #917191 !important;
+}
+.internal_navigation ul li a.active {
+    background-color: #EEEEEE;
+  border-radius: 3px 3px 0 0;
+  border-top: 3px solid #917191;
+  color: #917191 !important;
+}
+
+
+/***********start single page.php css**********/
+
+/****other courses****/
+.other_courses {
+  background-color: #fff;
+  border-radius: 4px;
+  float: left;
+  margin: 25px 0 0;
+  padding: 10px 0 0;
+  width: 100%;
+}
+.other_courses h4 {
+  border-bottom: 1px solid #e9e9e9;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.9em;
+  margin: 0 0 0 15px;
+  padding: 11px 0 5px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+.other_courses h4 span {
+    border-bottom: 2px solid rgb(255, 107, 73) !important;
+    width: 142px;
+}
+.other_courses ul {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.other_courses ul li {
+  border-bottom: 1px solid #e1e1e1;
+  cursor: pointer;
+  display: block;
+  float: left;
+  list-style-type: none;
+  margin: 0 0 10px;
+  padding: 20px 0;
+  width: 100%;
+}
+.other_courses ul li:hover {
+    background-color: #eee;
+}
+.other-course {
+    padding: 0;
+}
+.other-fees {
+    padding: 0;
+}
+.course_name {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 0.9em;
+  padding: 0 0 0 15px;
+  white-space: pre-line;
+}
+.course_fee {
+  font-size: 12px;
+  line-height: 0.9em;
+  white-space: pre-line;
+  color: #333;
+  font-weight: 900;
+}
+
+/***strt Eligibility and admission process***/
+.eligibility {
+  background-color: #fff;
+  border-radius: 4px;
+  float: left;
+  margin: 25px 0 0;
+  padding: 10px 15px 0;
+  width: 100%;
+}
+.eligibility h4 {
+  border-bottom: 1px solid #e9e9e9;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.9em;
+  margin: 0 0 13px;
+  padding: 11px 0 5px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+.eligibility h4 span {
+    border-bottom: 2px solid rgb(255, 107, 73) !important;
+    width: 313px;
+}
+.eligibility p {
+    font-size: 13px;
+    color: #333;
+}
+
+/***LOCATION & CONTACT INFO***/
+.lo_co_info {
+    background-color: #fff;
+  border-radius: 4px;
+  float: left;
+  margin: 25px 0 0;
+  padding: 10px 15px 0;
+  width: 100%;
+}
+.lo_co_info h4 {
+  border-bottom: 1px solid #e9e9e9;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.9em;
+  margin: 0 0 13px;
+  padding: 11px 0 5px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+.lo_co_info h4 span {
+    border-bottom: 2px solid rgb(255, 107, 73) !important;
+    width: 224px;
+}
+.info {
+    
+}
+.phone {
+    text-align: center;
+}
+.e-mail {
+    text-align: center;
+}
+.website {
+    text-align: center;
+}
+.address {
+  border-top: 1px solid #ddd;
+  margin: 25px 0 0;
+  padding: 10px 0 0;
+}
+.map iframe {
+    float: left;
+    width: 100%;
+}
+
+/***OVERVIEW***/
+.overview {
+    background-color: #fff;
+  border-radius: 4px;
+  float: left;
+  margin: 25px 0 0;
+  padding: 10px 15px 10px;
+  width: 100%;
+}
+.overview h4 {
+  border-bottom: 1px solid #e9e9e9;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.9em;
+  margin: 0 0 13px;
+  padding: 11px 0 5px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+.overview h4 span {
+    border-bottom: 2px solid rgb(255, 107, 73) !important;
+    width: 91px;
+}
+.facilities_available h6 {
+  font-size: 11px;
+}
+.facilities_available ul {
+  border-bottom: 1px solid #e9e9e9;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.facilities_available ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 20px;
+}
+.facilities_available ul li i {
+  color: #FF6B49;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 5px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #cccccc;
+}
+/*.facilities_available ul li:hover i {
+    color: #FF6B49;
+}*/
+
+.instute_type {
+    border-bottom:  1px solid #e9e9e9;
+    padding: 10px 0;
+}
+.instute_type i {
+  color: #ff6b49;
+  font-size: 20px;
+  padding: 0 10px 0 0;
+}
+.instute_type i strong {
+    
+}
+
+.aflited_to {
+    border-bottom:  1px solid #e9e9e9;
+    padding: 10px 0;
+}
+.aflited_to i {
+  color: #ff6b49;
+  font-size: 20px;
+  padding: 0 6px 0 0;
+}
+.aflited_to i strong {
+    
+}
+.approved_by {
+    border-bottom:  1px solid #e9e9e9;
+    padding: 10px 0;
+}
+.approved_by i {
+  color: #ff6b49;
+  font-size: 20px;
+  padding: 0 4px 0 0;
+}
+.approved_by i strong {
+    
 }

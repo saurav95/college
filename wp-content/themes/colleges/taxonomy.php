@@ -51,22 +51,16 @@ else {
 
 ?>
  
-    <div class="col-md-2 col-sm-2 col-xs-12 filter_form">
+    <div class="col-md-2 col-sm-2 col-xs-12 no-padding filter_form">
         <form id="search" action="" method="get">        
-    	
-		<h1>state</h1>
-		<?php $jobsTerms = get_terms('state',array( 'taxonomy' => 'state' )); 
-    		//print_r($jobsTerms);
-    			foreach($jobsTerms as $term){
-    			     ?>
-    				
-                     <input type="checkbox" name="state[]" value="<?php echo $term->name; ?>" <?php if(in_array($term->name, $state)) { echo "checked"; } ?> onchange="document.getElementById('search').submit()" /> <?php echo $term->name; ?>   </br>
-    		<?php	 
-    			}
-		?>
-		<br />
-		<h1>fees</h1>
-		<?php $jobsTerms = get_terms('fees-filter',array( 'taxonomy' => 'fees-filter' )); 
+           <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" data-target="#fees">
+                        <div class="filter-favicon"><i class="fa fa-inr"></i></div>
+                        <h6 class="filter-title">Total Fees<i class="pull-right fa fa-angle-down"></i></h6>
+                      </div>
+                      <div id="fees" class="panel-collapse collapse in"> 
+                        <?php $jobsTerms = get_terms('fees-filter',array( 'taxonomy' => 'fees-filter' )); 
     		//print_r($jobsTerms);
     			foreach($jobsTerms as $term){
     			     ?>
@@ -75,10 +69,31 @@ else {
     		<?php	 
     			}
 		?>
-		
-	</form>
+                      </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" data-target="#states">
+                        <div class="filter-favicon"><i class="fa fa-map-marker"></i></div>
+                        <h6 class="filter-title">States<i class="pull-right fa fa-angle-down"></i></h6>
+                      </div>
+                      <div id="states" class="panel-collapse collapse in"> 
+                        <?php $jobsTerms = get_terms('state',array( 'taxonomy' => 'state' )); 
+    		//print_r($jobsTerms);
+    			foreach($jobsTerms as $term){
+    			     ?>
+    				
+                     <input type="checkbox" name="state[]" value="<?php echo $term->name; ?>" <?php if(in_array($term->name, $state)) { echo "checked"; } ?> onchange="document.getElementById('search').submit()" /> <?php echo $term->name; ?>   </br>
+    		<?php	 
+    			}
+		?>
+                      </div>
+                    </div>
+                </div> 
+        </form>
     </div>	
-
+    
+    <div class="col-md-8 col-sm-8 col-xs-12">
  <?php
  
  $custom = get_post();
@@ -128,7 +143,7 @@ $query = new WP_Query( $args );
 while ( $query->have_posts() ) {
 	$query->the_post();
 ?> 	
-<div class="col-md-8 col-sm-8 col-xs-12 college_listings">
+<div class="col-md-12 col-sm-12 col-xs-12 college_listings">
     
  	<?php $College_logo = types_render_field( "college-logo", array("raw"=>"true","size"=>"large") ); ?>
 	<?php $location = types_render_field( "location", array("raw" => "true" ) ); ?>
@@ -182,7 +197,7 @@ while ( $query->have_posts() ) {
         <?php } ?>
     </ul>
     </div>
- 
+    </div> 
 <?php
 }
 
